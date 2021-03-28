@@ -45,17 +45,18 @@ if __name__ == '__main__':
     
     with open(HTML_FILE, 'w') as htmlfile:
         # TODO: sort by datetime
-        wrestling_recaps = filter(lambda article: article.category == WRESTLING_CATEGORY and article.preview is False, articles)
-        wrestling_previews = filter(lambda article: article.category == WRESTLING_CATEGORY and article.preview is True, articles)
-        wbb_recaps = filter(lambda article: article.category == WBB_CATEGORY, articles)
-        
+        wrestling_recaps = sorted(filter(lambda article: article.category == WRESTLING_CATEGORY and article.preview is False, articles), key=lambda item:item.date, reverse=True)
+        wrestling_previews = sorted(filter(lambda article: article.category == WRESTLING_CATEGORY and article.preview is True, articles), key=lambda item:item.date, reverse=True)
+        wbb_recaps = sorted(filter(lambda article: article.category == WBB_CATEGORY, articles), key=lambda item:item.date, reverse=True)
         
         htmlfile.write('            <h3>Wrestling Recaps</h3>\n')
         htmlfile.writelines(list(map(lambda entry: str(entry), wrestling_recaps)))
 
+        htmlfile.write('            <br>\n')
         htmlfile.write('            <h3>Wrestling Previews</h3>\n')
         htmlfile.writelines(list(map(lambda entry: str(entry), wrestling_previews)))
 
+        htmlfile.write('            <br>\n')
         htmlfile.write("            <h3>Women's Basketball</h3>\n")
         htmlfile.writelines(list(map(lambda entry: str(entry), wbb_recaps)))
         
