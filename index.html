@@ -35,8 +35,7 @@
       <ul class="main-menu">
         <li><a href="#home">home</a></li>
         <li><a href="#about">about</a></li>
-        <li><a href="#senior_design">senior design</a></li>
-        <li><a href="#competitions">competitions</a></li>
+        <li><a href="#blog">blog</a></li>
         <li><a href="#articles">articles</a></li>
         <li><a href="#contact">contact</a></li>
       </ul>                 
@@ -64,7 +63,7 @@
               Ian plays in the <a href="https://www.youtube.com/watch?v=G3Sn5UD2G0c&t=1379s">Purdue Philharmonic Orchestra</a> as a violinist, and also plays in Purdue's <a href="https://www.youtube.com/watch?v=nx-PaL6qQUw">Domani Quartet</a>.
               He wrote sports stories for The Purdue Exponent for two years, and is currently employed as a TA for Purdue's Honors first year engineering class.
               <br><br>
-              Ian is currently immersed in Neil Gaiman's "The Sandman" comic book.
+              Ian is currently immersed in Neil Gaiman's "The Sandman" comic book series.
               He also enjoys video games, and his current best Tetris 40 Line Sprint time is <a href="https://youtu.be/43ljf0lxVaQ">35.03 seconds</a>.
               <br><br>
               Ian can be reached at ianhaggerty3 [at] gmail [dot] com
@@ -82,68 +81,122 @@
             </p>
           </div>
 
-          <div id="senior_design" class="content-region hide">
-            <h2>Senior Design</h2>
+          <div id="blog" class="content-region hide">
+            <h2>Blog</h2>
             <p>
-              I completed my senior design project in the Fall of 2020.
-              The project was "Social Distancing Chess," a chess board which enables remote, manual chess play on a physical board between two players.
-              Check out our <a href="https://www.youtube.com/watch?v=lDki9iu0yV0 ">Demo Video</a>.
-              Our on-board source code can be found <a href="https://github.com/ECE-477-Team-22-Fall-2020/embedded-code">here</a>.
-              There is also a <a href="https://engineering.purdue.edu/ece477/Archive/2020/Fall/477grp22/index.html">Project Website</a>, but the archive needs to be fixed for the site to display properly.
-            </p>
-          </div>
+              <h3>Tetris Stats Dev Log #1</h3>
+              <h4>April 27, 2021</h4>
+              <p>
+                I've been working on a new and exciting personal project the past few weeks, and I'm excited to say that I have some cool results to show from it.
+                The project can be found <a href="https://github.com/ianhaggerty3/tetris-stats">Here</a>.
+                <br><br>
+                The goal of the project is to analyze information from my historic tetris play.
+                I have consistent stats from the past year of playing a game called "NullpoMino," a popular open-source Tetris.
+                NullpoMino can be found <a href="https://github.com/nullpomino/nullpomino">Here</a>.
+                <br><br>
+                So far in the project, I have reverse engineered the NullpoMino replay files to get valuable information, 
+                consolidated that information into a Python data strucure, and then generated several plots to represent the information.
+                The plots are shown in the project's README and <a href="https://www.reddit.com/r/Tetris/comments/myazc1/i_tracked_some_of_my_nullpomino_stats_over_the/">This</a> Reddit post.
+                I will likely add them to this blog in the future as well.
+                <br><br>
+                I am proud of making real results from this project, but there is a lot more still to be done.
+                There are sure to be many more interesting stats to track on my Tetris play.
+                In addition, I hope to build an actual usable tool out of my replay parsing software.
+                Right now, it is not very user-friendly.
+                Another goal is to build a GUI which shows Tetris stats for the current play section.
+                I have already looked into using a Python watchdog to track new replay files as they appear,
+                so the next step would be to build a GUI around that which displays stats in real time.
+                <br><br>
+                Overall, I'm really excited about this project.
+                Tetris is my game, so I think it makes sense for me to spend my extra time working on software for something I'm interested in.
+                I can find a lot more motivation to work on this project than other personal projects I've worked on in the past.
+              </p>
 
-          <div id="competitions" class="content-region hide">
-            <h2>Competitions</h2>
-            <p>
-               I have competed in several programming or hacking competitions in my most recent two years at Purdue, and had a lot of fun with them.
+              <h3>Terminal Midwest Regional 2021</h3>
+              <h4>March 17, 2021</h4>
+              <p>
+                I competed in the Terminal Midwest Regional last week, and it was a lot of fun!
+                Terminal is an AI Programming Competition hosted by Correlation One.
+                This was my third time competing in a Terminal event, and it was hosted virtually.
+                There is a global competition that you can try out on <a href="https://terminal.c1games.com/">their website</a>.
+                They also host student competitions with variants of the current season's game rules.
+                <br><br>
+                For this regional, I teamed up with <a href="https://www.linkedin.com/in/philip-x-cao-71016656/">Phillip Zao</a> and <a href="https://www.linkedin.com/in/shilin-shirley-ma-939b6a57/">Shilin Ma</a> to craft an adaptive, tower-defense style Python algorithm.
+                We collaborated remotely over the course of a week, and we were able to incorporate ideas from all three participants.
+                Phillip focused on building nice, interchangeable macro strategies.
+                I switched between these strategies by analyzing our past performance and analyzing enemy defences.
+                Shilin looked over our replays and found irregularities in how we behaved.
+                She found several key bugs which appeared up when switching between strategies.
+                <br><br>
+                We managed a 9th place finish out of 47 in a stacked competition field, earning $1,000.
+                I am proud that we were able to work well together remotely as a team.
+                This was the first time I have earned money at a Terminal event, and I think that our team performance deserved it.
+                <a href="https://terminal.c1games.com/watch/7939555">Here</a> is one of the matches from our final algorithm (Note: You need to have a Terminal account to view the replay).
+              </p>
 
-               <h2>Terminal Midwest Regional 2021</h2>
-               <p>
-                 Terminal is an AI Programming Competition hosted by Correlation One.
-                 This was my third time competing in it, and it was hosted virtually.
-                 There is a global competition that you can try out on <a href="https://terminal.c1games.com/">their website</a>. They also host student competitions with variants of the current season's game rules.
-                 <br><br>
-                 For this regional, I teamed up with <a href="https://www.linkedin.com/in/philip-x-cao-71016656/">Phillip Zao</a> and <a href="https://www.linkedin.com/in/shilin-shirley-ma-939b6a57/">Shilin Ma</a> to craft an adaptive, tower-defense style Python algorithm.
-                 We collaborated remotely over the course of a week.
-                 We managed a 9th place finish out of 47 in a stacked competition field, earning $1,000.
-                 <a href="https://terminal.c1games.com/watch/7939555">Here</a> is one of the matches from our final algorithm (Note: You need to have a Terminal account to view the replay).
-               </p>
+              <h3>Senior Design</h3>
+              <h4>December 14, 2020</h4>
+              <p>
+                I finished up the final requirements of my Senior Design project last week!
+                The project was "Social Distancing Chess," a chess board which enables remote, manual chess play on a physical board between two players.
+                I am proud to say that we were able to meet 100% of our Project-Specific Success Criteria.
+                Check out our <a href="https://www.youtube.com/watch?v=lDki9iu0yV0 ">Demo Video</a>.
+                Our on-board source code can be found <a href="https://github.com/ECE-477-Team-22-Fall-2020/embedded-code">here</a>.
+                There is also a <a href="https://engineering.purdue.edu/ece477/Archive/2020/Fall/477grp22/index.html">Project Website</a>, but the class archive needs to be fixed for the site to display properly.
+              </p>
 
-               <h2>HackIN 2020</h2>
-               <p>
-                 HackIN 202 is a Virtual hacking event hosted by the Indiana Innovation Institute.
-                 One competition focus was on reverse engineering. 
-                 It tasked student teams with solving a variety of challenges mostly corresponding to figuring out different programs.
-                 Some challenges involved obtaining and analyzing keypad firmware off of a physical device they sent us.
-                 Others included analyzing a custom kernel module loaded onto an infected computer (simulated with a competition VM), and finally finding vulnerabilities on the malicious party's site.
-                 I focused mainly on the binary reverse engineering aspects of the competition.
-                 <br><br>
-                 I teamed up with two electrical engineers from Purdue Fort Wayne, and we were able to take 9th place out of around 30 teams.
-                 This was a very exciting competition for me, because I had dedicated a lot of time over the summer to learning about different binary reverse engineering tools.
-                 I had learned about the subject when taking ECE 404: Introduction to Computer Security.
-                 After that, I completed most of <a href="https://maxkersten.nl/binary-analysis-course/">Max Kersten's Binary Analysis course</a>.
-                 I saw the competition as a cool way for me to show off these new skills.
-                 I used Ghidra to help solve challenges, and had a great time coming up with solutions.
-                 <br><br>
-                 As cool as the competition was, I wasn't able to find any leads into binary analysis roles that I would be comfortable with pursuing.
-               </p>
+              <h3>HackIN 2020</h3>
+              <h4>September 29, 2020</h4>
+              <p>
+                I participated in HackIN 2020 last week, and had a lot of fun completing a variety of hacking challenges.
+                HackIN 2020 is a Virtual hacking event hosted by the Indiana Innovation Institute.
+                One competition focus was on reverse engineering. 
+                It tasked student teams with solving a variety of challenges mostly corresponding to analyzing different programs.
+                Some challenges involved obtaining and analyzing keypad firmware off of a physical device they sent us.
+                Others included analyzing a custom kernel module loaded onto an infected computer (simulated with a competition VM), and finally finding vulnerabilities on the malicious party's site.
+                I focused mainly on the binary reverse engineering aspects of the competition.
+                <br><br>
+                I teamed up with two electrical engineers from Purdue Fort Wayne, and we were able to take 9th place out of around 30 teams.
+                We entered the competition as team "Electrifried," and had the goal to have fun and learn as much as possible.
+                <br><br>
+                Here is a graph of our leaderboard position over time:
+                <br>
+                <img src="hackin_leaderboard.JPG" alt="Ian Haggerty" style="width:100%">
 
-               <h2>Terminal UIUC Vs. Michigan 2020</h2>
-               <p>
-                 This was another Terminal student competition which ocurred virtually in Fall 2020.
-                 I entered this competition with my roommate <a href="https://www.linkedin.com/in/matthew-maclean-741023158/">Matthew MacLean</a>.
-                 We came up with a lot of cool ideas to compete with our opponents, but couldn't make it out of the first round.
-                 We were able to open-source our strategy at this <a href="https://github.com/ianhaggerty3/boiler_up_c1_games">repo</a>.
-               </p>
-               
-               <h2>Terminal UIUC Vs. Michigan 2019</h2>
-               <p>
-                 This was my first Terminal competition, and it took place physically at UIUC in Fall 2019.
-                 I joined a team with two UIUC students, and we completed the competition within the course of a day.
-                 We were unable to make it past the first round, but it was very fun to meet and interact with so many other students in similar majors.
-                 There were very few Purdue students there, so I was able to meet a lot of new people.
-               </p>
+                <br>
+
+                As you can see, our position dips a little bit at the end.
+                At this point, we were very stuck on all remaining challenges, so we bought "hints" for all of them.
+                This helped us learn more about what we didn't know, and I felt that it was very valuable.
+                The mentors explained what we weren't getting about these challenges, so I knew what to focus on learning next.
+                Specifically, an unsolved challenge required us to mimic HTTP packets and change the headers to gain admin access to a website.
+                I thought this would be a lot harder than it actually was, so I am definitely going to learn more about doing packet manipulation with Python now!
+
+                <br><br>
+                This was a very exciting competition for me, because I had dedicated a lot of time over the summer to learning about different binary reverse engineering tools.
+                I had learned about the subject when taking ECE 404: Introduction to Computer Security.
+                After that, I completed most of <a href="https://maxkersten.nl/binary-analysis-course/">Max Kersten's Binary Analysis course</a>.
+                I saw the competition as a cool way for me to show off these new skills.
+                I used Ghidra to help solve challenges, and had a great time coming up with solutions.
+                <br><br>
+                As cool as the competition was, I wasn't able to find any leads into binary analysis roles that I would be comfortable with pursuing.
+              </p>
+
+              <h3>Terminal UIUC Vs. Michigan 2020</h3>
+              <p>
+                This was another Terminal student competition which ocurred virtually in Fall 2020.
+                I entered this competition with my roommate <a href="https://www.linkedin.com/in/matthew-maclean-741023158/">Matthew MacLean</a>.
+                We came up with a lot of cool ideas to compete with our opponents, but couldn't make it out of the first round.
+                We were able to open-source our strategy at this <a href="https://github.com/ianhaggerty3/boiler_up_c1_games">repo</a>.
+              </p>
+              
+              <h3>Terminal UIUC Vs. Michigan 2019</h3>
+              <p>
+                This was my first Terminal competition, and it took place physically at UIUC in Fall 2019.
+                I joined a team with two UIUC students, and we completed the competition within the course of a day.
+                We were unable to make it past the first round, but it was very fun to meet and interact with so many other students in similar majors.
+                There were very few Purdue students there, so I was able to meet a lot of new people.
+              </p>
 
 
             </p>
